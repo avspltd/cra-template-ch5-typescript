@@ -1,0 +1,31 @@
+{
+  "package": {
+    "dependencies": {
+      "@crestron/ch5-crcomlib": "^1.0.0",
+      "@crestron/ch5-utilities-cli": "^0.1.47",
+      "@testing-library/jest-dom": "^5.5.0",
+      "@testing-library/react": "^10.0.4",
+      "@testing-library/user-event": "^10.1.0",
+      "@types/classnames": "^2.2.10",
+      "@types/node": "^12.0.0",
+      "@types/react": "^16.9.0",
+      "@types/react-dom": "^16.9.0",
+      "@types/jest": "^25.0.0",
+      "classnames": "^2.2.6",
+      "ncp": "^2.0.0",
+      "node-sass": "^4.14.1",
+      "react-ch5": "^0.1.2",
+      "typescript": "^3.8.0"
+    },
+    "scripts": {
+      "copylib": "ncp ./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js public/cr-com-lib.js",
+      "start": "npm run copylib && react-scripts start",
+      "build": "npm run copylib && react-scripts build",
+      "serve": "serve -s build",
+      "build-and-serve": "yarn build && yarn serve",
+      "build:archive": "yarn ch5-cli archive -p ch5-react -P samplesource=ch5-react -d build -o dist",
+      "build:deploy": "yarn ch5-cli deploy -p -H panel -t touchscreen dist/ch5-react.ch5z",
+      "build:onestep": "yarn build && yarn build:archive && yarn build:deploy"
+    }
+  }
+}

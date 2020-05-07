@@ -1,0 +1,32 @@
+
+.default {
+  // space them out
+  margin: 1rem;
+
+  // prevent text selection
+  user-select: none;
+
+  // center our content
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // default sizing
+  width: 8rem;
+  height: 4rem;
+  
+  // style
+  border-radius: 0.5rem;
+}
+
+// button on state
+.on {
+  color: #fff;
+  background-color: #22f;
+}
+
+// button off state
+.off {
+  color: #aaa;
+  background-color: #118;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "cra-template-ch5-typescript",
+  "version": "0.1.6",
+  "keywords": [
+    "ch5",
+    "crestron",
+    "react",
+    "create-react-app",
+    "template",
+    "typescript"
+  ],
+  "description": "The AVSP Ltd CH5 TypeScript template for Create React App.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avspltd/cra-template-ch5-typescript.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/avspltd/cra-template-ch5-typescript/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
